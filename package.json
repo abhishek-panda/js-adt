@@ -1,0 +1,31 @@
+{
+  "name": "js-adt",
+  "version": "1.0.0",
+  "description": "Abstract data types",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abhishek-panda/js-adt.git"
+  },
+  "keywords": [
+    "ADT",
+    "LinkedList",
+    "Tree",
+    "Graph"
+  ],
+  "author": "Abhishek Panda",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/abhishek-panda/js-adt/issues"
+  },
+  "homepage": "https://github.com/abhishek-panda/js-adt#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "istanbul": "^0.4.5",
+    "jsdoc": "^3.5.5",
+    "mocha": "^5.2.0"
+  }
+}
