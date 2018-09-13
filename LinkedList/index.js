@@ -119,6 +119,28 @@ var LinkedList = (function () {
         return foundAt;
     }
 
+    function makeLoop(toIndex, fromIndex) {
+        var node = this.root;
+        var toNode, fromNode;
+        var position = 0;
+        while(node) {
+            if(toIndex === position) {
+                toNode = node;
+            }
+            if(fromIndex === position){
+                fromNode = node;
+            }
+            if(!toNode && !fromNode) {
+                break;
+            }
+        }
+        if(toNode && fromNode) {
+            fromNode.next = toNode;
+            return true;
+        }
+        return false;
+    }
+
     function getRoot() { return this.root; }
 
     function getSize() {
@@ -143,6 +165,7 @@ var LinkedList = (function () {
         remove: remove,
         removeAt: removeAt,
         search: search,
+        makeLoop: makeLoop,
         getRoot: getRoot,
         getSize: getSize,
         toString: toString
