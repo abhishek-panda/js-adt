@@ -1,6 +1,6 @@
 {
   "name": "js-adt",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Abstract data types",
   "main": "index.js",
   "scripts": {
