@@ -119,7 +119,7 @@ var LinkedList = (function () {
         return foundAt;
     }
 
-    function makeLoop(toIndex, fromIndex) {
+    function makeLoop(fromIndex, toIndex) {
         var node = this.root;
         var toNode, fromNode;
         var position = 0;
@@ -130,9 +130,8 @@ var LinkedList = (function () {
             if(fromIndex === position){
                 fromNode = node;
             }
-            if(!toNode && !fromNode) {
-                break;
-            }
+            node = node.next;
+            position++;
         }
         if(toNode && fromNode) {
             fromNode.next = toNode;
