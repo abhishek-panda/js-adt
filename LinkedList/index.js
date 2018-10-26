@@ -157,18 +157,16 @@ var LinkedList = (function () {
     function BaseLinkedList() {
         this.root = null;
     }
-
-    BaseLinkedList.prototype = {
-        add: add,
-        addAt: addAt,
-        remove: remove,
-        removeAt: removeAt,
-        search: search,
-        makeLoop: makeLoop,
-        getRoot: getRoot,
-        getSize: getSize,
-        toString: toString
-    };
+    
+    BaseLinkedList.prototype.add = add;
+    BaseLinkedList.prototype.addAt = addAt;
+    BaseLinkedList.prototype.remove = remove;
+    BaseLinkedList.prototype.removeAt = removeAt;
+    BaseLinkedList.prototype.search = search;
+    BaseLinkedList.prototype.makeLoop = makeLoop;
+    BaseLinkedList.prototype.getRoot = getRoot;
+    BaseLinkedList.prototype.getSize = getSize;
+    BaseLinkedList.prototype.toString = toString;
 
     return BaseLinkedList;
 

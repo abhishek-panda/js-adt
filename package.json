@@ -1,6 +1,6 @@
 {
   "name": "js-adt",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Abstract data types",
   "main": "index.js",
   "scripts": {
@@ -13,6 +13,7 @@
   "keywords": [
     "ADT",
     "LinkedList",
+    "Stack",
     "Tree",
     "Graph"
   ],
