@@ -152,6 +152,16 @@ var LinkedList = (function () {
         return length;
     }
 
+    function getFront() { return this.root; }
+
+    function getLast() {
+        var node = this.root;
+        while(node.next != null) {
+            node = node.next;
+        }
+        return node;
+    }
+
     function toString() { return JSON.stringify(this.root); }
 
     function BaseLinkedList() {
@@ -166,6 +176,8 @@ var LinkedList = (function () {
     BaseLinkedList.prototype.makeLoop = makeLoop;
     BaseLinkedList.prototype.getRoot = getRoot;
     BaseLinkedList.prototype.getSize = getSize;
+    BaseLinkedList.prototype.getFront = getFront;
+    BaseLinkedList.prototype.getLast = getLast;
     BaseLinkedList.prototype.toString = toString;
 
     return BaseLinkedList;

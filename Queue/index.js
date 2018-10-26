@@ -22,6 +22,20 @@ Queue.prototype.dequeue = function() {
     return removedNode.data;
 }
 
+Queue.prototype.getFront = function() {
+    var frontNode = this.data.getRoot();
+    return frontNode.data;
+}
+
+Queue.prototype.getRear = function() {
+    var lastNode = this.data.getLast();
+    return lastNode.data;
+}
+
+Queue.prototype.getSize = function() {
+    return this.data.getSize();
+}
+
 Queue.prototype.toString = function() {
     var allData = [];
     var node = this.data.getRoot();

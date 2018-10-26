@@ -22,6 +22,15 @@ Stack.prototype.isEmpty = function() {
     return !Boolean(this.data.getSize());
 }
 
+Stack.prototype.getPeek = function() {
+    var peekNode = this.data.getLast();
+    return peekNode.data;
+}
+
+Stack.prototype.getSize = function() {
+    return this.data.getSize();
+}
+
 Stack.prototype.toString = function() {
     var allData = [];
     var node = this.data.getRoot();
