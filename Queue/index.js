@@ -36,7 +36,7 @@ Queue.prototype.getSize = function() {
     return this.data.getSize();
 }
 
-Queue.prototype.toString = function() {
+Queue.prototype.toArray = function() {
     var allData = [];
     var node = this.data.getRoot();
     while(node != null) {

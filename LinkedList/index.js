@@ -113,31 +113,11 @@ var LinkedList = (function () {
             position++;
             if(node.data === value) {
                 foundAt = position;
+                break;
             }
             node = node.next;
         }
         return foundAt;
-    }
-
-    function makeLoop(fromIndex, toIndex) {
-        var node = this.root;
-        var toNode, fromNode;
-        var position = 0;
-        while(node) {
-            if(toIndex === position) {
-                toNode = node;
-            }
-            if(fromIndex === position){
-                fromNode = node;
-            }
-            node = node.next;
-            position++;
-        }
-        if(toNode && fromNode) {
-            fromNode.next = toNode;
-            return true;
-        }
-        return false;
     }
 
     function getRoot() { return this.root; }
@@ -173,7 +153,6 @@ var LinkedList = (function () {
     BaseLinkedList.prototype.remove = remove;
     BaseLinkedList.prototype.removeAt = removeAt;
     BaseLinkedList.prototype.search = search;
-    BaseLinkedList.prototype.makeLoop = makeLoop;
     BaseLinkedList.prototype.getRoot = getRoot;
     BaseLinkedList.prototype.getSize = getSize;
     BaseLinkedList.prototype.getFront = getFront;

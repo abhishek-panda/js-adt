@@ -56,7 +56,7 @@ PriorityQueue.prototype.getSize = function() {
     return this.data.getSize();
 }
 
-PriorityQueue.prototype.toString = function() {
+PriorityQueue.prototype.toArray = function() {
     var allData = [];
     var node = this.data.getRoot();
     while(node != null) {

@@ -31,7 +31,7 @@ Stack.prototype.getSize = function() {
     return this.data.getSize();
 }
 
-Stack.prototype.toString = function() {
+Stack.prototype.toArray = function() {
     var allData = [];
     var node = this.data.getRoot();
     while(node != null) {
